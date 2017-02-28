@@ -1,0 +1,10 @@
+version: '2'
+services:
+        survey_ui:
+                build: .
+                ports: 
+                      - "9000:9000"
+                volumes:
+                      - .:/code
+                      - /code/node_modules 
+
